@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<link rel = "icon"  href="https://i.ibb.co/Rhd5GtX/LGO4.jpg" type = "image/x-icon">	
+<title>TechEdu</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+	
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+	
+    <a href="#home" class="w3-bar-item w3-button"><b>Home</b></a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="https://analyticsindiamag.com/wp-content/uploads/2017/09/UK-Startup-Accelerators-A-Complete-Guide.jpg" alt="Architecture" width="1500" height="800">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"> 
+		<img src="https://i.ibb.co/Rhd5GtX/LGO4.jpg" alt="icon"><br>
+		<span class="w3-hide-small w3-text-light-grey">A Practical Learning Platform</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p>TechEdu is a startup that brings up awesome opportunities to students to get their dream internship in corporate companies.<br>
+		We are talent acquisition partner of various corporate companies who is providing them best talent based on their requirements.We <br>"<i>FULFILL THE NEED OF PRACTICAL LEARNING</i>"<br>
+	   At TechEdu we notify student community enrolled with us about the internship and job openings in corporate companies which are having<br>
+		collaboration with us then we conduct various aptitude test and interview rounds which helps us to filter best talent.
+    </p>
+  </div>
+  
+  <div class=" w3-display-container">
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="https://i.ibb.co/r4S04rS/Founder.jpg" 
+	  alt="John" style="width:100%">
+      <h3>Gaurav Topre</h3>
+      <p class="w3-opacity">CEO & Founder</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="https://i.ibb.co/x1JFK67/cofounder.jpg" alt="Jane" style="width:100%">
+      <h3>Ankush Mandal</h3>
+      <p class="w3-opacity">Co-Founder</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="https://i.ibb.co/DRfdvZf/techlead.jpg" alt="Mike" style="width:100%">
+      <h3>Ram Agrawal</h3>
+      <p class="w3-opacity">Cheif Technological Officer</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="https://i.ibb.co/hYHTm3Q/CEO.jpg" alt="Dan" style="width:100%">
+      <h3>Rahul Wagh</h3>
+      <p class="w3-opacity">HR</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+
+    <button class="w3-button w3-display-left w3-light-grey" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-display-right w3-light-grey" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+</div>
+
+  
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p>Lets get in touch and talk about your next project.</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<br><br>
+   <footer class="w3-container w3-teal w3-center w3-margin-top" style="background-color:black;color:white;text-align: center;">
+    <h2 style="padding-top: 20px;padding-left: 20px;">Find us on social media.</h2>
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+   </footer>
+
+</body>
+</html>
+        
